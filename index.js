@@ -1,20 +1,20 @@
 
 import express from "express";
 import cors from "cors";
-import routes from "./routes";
+import routes from "./routes/Datos.routes.js";
 import mongoose from "mongoose";
-
-
+require("dotenv").config();
 
 const app = express();
+app.set('port', process.env.PORT || 4000);
 
 //conexion a base de datos
 mongoose.Promise=global.Promise;
-const dbUrl='mongodb://127.0.0.1:27017/informacion';
-mongoose.connect(dbUrl)
-.then(mongoose=>console.log('Conectado a la bd en el puerto 27017'));
+mongoose.connect(process.env.MONGODB_URI)
+.then(() => console.log('Conectado aL MongoDB Atlas'))
+.catch((error) => console.log(error))
 //Listening de puertos
-app.set('port', process.env.PORT || 4000);
+
 
 app.use(cors());
 

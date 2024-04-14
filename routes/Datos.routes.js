@@ -1,8 +1,7 @@
 import routerx from "express-promise-router";
-import Datosctr from "../controllers/Datos.controller";
+import Datosctr from "../controllers/Datos.controller.js";
 
 const router = routerx();
-
 router.post("/saveData", Datosctr.postDatos);
 router.get("/buscar", Datosctr.getDatos);
 router.patch("/actualizar/:id", Datosctr.putDatos);

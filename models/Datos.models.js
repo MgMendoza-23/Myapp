@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const datos=mongoose.Schema(
+const datosSchema=mongoose.Schema(
     {
         nombre:String,
         direccion:String,
@@ -10,5 +10,5 @@ const datos=mongoose.Schema(
     }
 );
 
-const Datos=mongoose.model('datos',datos);
+const Datos=mongoose.model('datos',datosSchema);
 export default Datos;

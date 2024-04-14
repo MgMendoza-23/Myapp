@@ -1,5 +1,4 @@
-import Models from "../models";
-
+import Models from "../models/Datos.models.js";
 export default {
 
   //Endpoint Enviar Datos
@@ -75,7 +74,7 @@ export default {
       //res.status(200).json(el);
     } catch (error) {
       res.status(500).send({
-        message: "Error al eliminar dato",
+        message: "Error al eliminar dato"
       });
       next(error);
     }
