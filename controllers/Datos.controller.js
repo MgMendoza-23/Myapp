@@ -1,4 +1,4 @@
-import Models from "../models/Datos.models.js";
+import Models from "../models/index.js";
 export default {
 
   //Endpoint Enviar Datos
