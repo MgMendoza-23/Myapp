@@ -1,6 +1,6 @@
 import routerx from "express-promise-router";
 import DatosR from "../routes/Datos.routes.js";
-import  AuthRoutes from './Auth'
+import  AuthRoutes from './Auth.js'
 
 const router = routerx();
 
