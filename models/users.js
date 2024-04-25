@@ -1,4 +1,4 @@
-const mongoose=require("mongoose");
+import mongoose from "mongoose";
 
 const userSchema=mongoose.Schema({
     nomusuario: String,
@@ -12,4 +12,5 @@ const userSchema=mongoose.Schema({
     active:Boolean,
     avatar:String
 });
-module.exports=mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
+export default User;
