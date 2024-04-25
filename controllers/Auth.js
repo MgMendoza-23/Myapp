@@ -1,4 +1,4 @@
-import {User} from "../models/users.js";
+import { User } from "../models/users.js";
 import bcrypt from "bcryptjs";
 
 async function Registrar(req, res) {
