@@ -1,5 +1,6 @@
 import express from 'express';
-const AuthController = require('../controllers/Auth.js');
+import AuthController from '../controllers/Auth.js';
+
 const api = express.Router();
 
 api.post("/registro", AuthController.Registrar);
