@@ -74,6 +74,8 @@ async function Login(req, res) {
 }
 
 module.exports = {
-    Registrar,
-    Login
+    default:{
+        Registrar,
+        Login
+    }
 };
