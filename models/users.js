@@ -12,5 +12,5 @@ const userSchema=mongoose.Schema({
     active:Boolean,
     avatar:String
 });
-const User = mongoose.model("User", userSchema);
-export { User as default };
+const User = mongoose.model("USer", userSchema);
+export default User;
