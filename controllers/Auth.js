@@ -73,7 +73,7 @@ async function Login(req, res) {
     }
 }
 
-module.exports = {
+export default {
     Registrar,
     Login
 };
