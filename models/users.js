@@ -12,4 +12,4 @@ const userSchema=mongoose.Schema({
     active:Boolean,
     avatar:String
 });
-const User = mongoose.model("USser", userSchema);
+export const User = mongoose.model("User", userSchema);;
