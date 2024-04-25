@@ -12,4 +12,4 @@ const userSchema=mongoose.Schema({
     active:Boolean,
     avatar:String
 });
-module.exports=mongoose.model("USer", userSchema);
+module.exports=mongoose.model("User", userSchema);
